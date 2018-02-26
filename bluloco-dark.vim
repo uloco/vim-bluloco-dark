@@ -18,8 +18,8 @@ hi DiffText   ctermbg=32      guibg=#177da9
 
 hi Directory  ctermfg=39      	guifg=#10b1fe
 hi ErrorMsg   ctermfg=255	      ctermbg=197      guifg=White    guibg=#fc2f52
-hi FoldColumn ctermfg=27      	ctermbg=249      guifg=#3476ff  guibg=#b9c0cb
-hi Folded     ctermbg=27	      ctermfg=249      guifg=#3476ff  guibg=#b9c0cb
+hi FoldColumn ctermfg=27      	ctermbg=249      guifg=#3691ff  guibg=#b9c0cb
+hi Folded     ctermbg=27	      ctermfg=249      guifg=#3691ff  guibg=#b9c0cb
 hi IncSearch  cterm=reverse	    gui=reverse
 hi LineNr     ctermfg=242       guifg=#747d8d
 hi CursorLineNr  ctermfg=Yellow       guifg=#ffcc00
@@ -35,7 +35,7 @@ hi VertSplit  cterm=reverse	   gui=reverse
 hi Visual     ctermbg=239  guibg=#4b505b guifg=NONE
 hi VisualNOS  cterm=underline,bold gui=underline,bold
 hi WarningMsg ctermfg=197	   guifg=#fc2f52
-hi WildMenu   cterm=bold ctermfg=254 ctermbg=27 gui=bold guifg=#e7f0ff guibg=#3476ff
+hi WildMenu   cterm=bold ctermfg=254 ctermbg=27 gui=bold guifg=#e7f0ff guibg=#3691ff
 
 hi TermCursor     cterm=reverse gui=reverse
 hi NonText        ctermfg=242 ctermbg=235 gui=bold guifg=#747d8d guibg=#22252a
@@ -47,7 +47,7 @@ hi SpellCap       ctermbg=81 gui=undercurl guisp=Blue
 hi SpellRare      ctermbg=225 gui=undercurl guisp=Magenta
 hi SpellLocal     ctermbg=14 gui=undercurl guisp=DarkCyan
 hi Pmenu          ctermbg=235  ctermfg=249  guibg=#22252a guifg=#b9c0cb
-hi PmenuSel       ctermfg=white  ctermbg=27  guifg=white guibg=#3476ff
+hi PmenuSel       ctermfg=white  ctermbg=27  guifg=white guibg=#3691ff
 hi PmenuSbar      ctermbg=235 guibg=#22252a
 hi PmenuThumb     ctermbg=242 guibg=#747d8d
 hi TabLine        ctermfg=242 ctermbg=235 guifg=#747d8d guibg=#25272d
@@ -71,7 +71,11 @@ hi Type	      cterm=NONE ctermfg=204  gui=NONE  guifg=#ff6480
 hi String     cterm=NONE ctermfg=222  gui=NONE  guifg=#f9c859
 hi Operator   cterm=NONE ctermfg=105  gui=NONE  guifg=#7a82da
 hi Field      cterm=NONE ctermfg=138  gui=NONE  guifg=#ce9887
+hi Parameter  cterm=NONE ctermfg=81   gui=NONE  guifg=#8bcdef
+hi Attribute  cterm=NONE ctermfg=209  gui=NONE  guifg=#ff936a
+hi Tag        cterm=NONE ctermfg=27   gui=NONE  guifg=#3691ff
 
+hi link Class Type
 
 " javascript
 hi link javaScriptBraces Operator
@@ -80,6 +84,38 @@ hi link javaScriptNumber Number
 hi link javaScriptIdentifier Statement
 hi link javaScriptFunction Statement
 hi link javaScriptBoolean Keyword
+
+" vim-javascript
+hi link jsGlobalObjects Normal
+hi link jsEnvComment Comment
+hi link jsStorageClass Keyword
+hi link jsFunction Keyword
+hi link jsThis Keyword
+hi link jsBooleanTrue Keyword
+hi link jsBooleanFalse Keyword
+hi link jsObjectBraces Operator
+hi link jsClassBraces Operator
+hi link jsFuncParens Operator
+hi link jsFuncBraces Operator
+hi link jsBrackets Operator
+hi link jsParens Operator
+hi link jsNoise Operator
+hi link jsArrowFunction Keyword
+hi link jsFuncArgs Parameter
+hi link jsFuncCall Function
+hi link jsObjectProp Field
+hi link jsObjectKey Field
+hi link jsSpecial Attribute
+hi link jsClassDefinition Class
+
+hi link jsRegexpGroup Field
+hi link jsRegexpQuantifier Operator
+hi link jsRegexpBoundary Keyword
+
+" html
+hi link htmlTag Tag
+hi link htmlEndTag Tag
+hi link htmlTagName Tag
 
 " typescript
 hi link typescriptBraces Operator

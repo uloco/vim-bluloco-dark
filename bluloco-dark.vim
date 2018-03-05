@@ -5,8 +5,27 @@ hi clear
 
 let g:colors_name = "bluloco-dark"
 
+" Terminal colors
+let g:terminal_color_0  = '#5C6370'
+let g:terminal_color_1  = '#FC2F52'
+let g:terminal_color_2  = '#25A45C'
+let g:terminal_color_3  = '#FF936A'
+let g:terminal_color_4  = '#3476FF'
+let g:terminal_color_5  = '#9F7EFE'
+let g:terminal_color_6  = '#4483AA'
+let g:terminal_color_7  = '#D5DDEA'
+let g:terminal_color_8  = '#747D8D'
+let g:terminal_color_9  = '#FF6480'
+let g:terminal_color_10 = '#3FC56B'
+let g:terminal_color_11 = '#F9C859'
+let g:terminal_color_12 = '#10B1FE'
+let g:terminal_color_13 = '#FF78F8'
+let g:terminal_color_14 = '#5FB9BC'
+let g:terminal_color_15 = '#FFFFFF'
+
 " Normal should come first
-hi Normal     ctermfg=249  ctermbg=236  guifg=#b9c0cb  guibg=#282c34
+" hi Normal     ctermfg=249  ctermbg=236  guifg=#b9c0cb  guibg=#282c34
+hi Normal     ctermfg=249  ctermbg=NONE  guifg=#b9c0cb  guibg=NONE
 hi Cursor                               guifg=#282c34  guibg=#ffcc00
 hi lCursor                              guifg=#282c34  guibg=#ffcc00
 
@@ -38,7 +57,8 @@ hi WarningMsg ctermfg=197	   guifg=#fc2f52
 hi WildMenu   cterm=bold ctermfg=254 ctermbg=27 gui=bold guifg=#e7f0ff guibg=#3691ff
 
 hi TermCursor     cterm=reverse gui=reverse
-hi NonText        ctermfg=242 ctermbg=235 gui=bold guifg=#747d8d guibg=#22252a
+hi NonText        ctermfg=242 ctermbg=NONE gui=bold guifg=#747d8d guibg=NONE
+" hi NonText        ctermfg=242 ctermbg=235 gui=bold guifg=#747d8d guibg=#22252a
 hi VertSplit      cterm=reverse gui=reverse
 hi SignColumn     ctermbg=NONE guibg=NONE
 hi Conceal        ctermfg=249 ctermbg=242 guifg=#b9c0cb guibg=#747d8d
@@ -61,21 +81,26 @@ hi CursorLine     cterm=NONE ctermbg=237  guibg=#2d333d
 hi ColorColumn    ctermbg=242  guibg=#747d8d
 
 hi Comment    cterm=NONE ctermfg=242  gui=NONE  guifg=#747d8d
-hi Constant   cterm=NONE ctermfg=206  gui=NONE  guifg=#ff78f8
+hi Constant   cterm=NONE ctermfg=99   gui=NONE  guifg=#9f7efe
+hi String     cterm=NONE ctermfg=222  gui=NONE  guifg=#f9c859
+hi link Character String
 hi Number     cterm=NONE ctermfg=206  gui=NONE  guifg=#ff78f8
-hi Identifier cterm=NONE ctermfg=42   gui=NONE  guifg=#3fc56b
+hi link Boolean Keyword
+hi Identifier cterm=NONE ctermfg=138  gui=NONE  guifg=#ce9887
+hi Function   cterm=NONE ctermfg=42   gui=NONE  guifg=#3fc56b
 hi PreProc    cterm=NONE ctermfg=39   gui=NONE  guifg=#10b1fe
-hi Special    cterm=NONE ctermfg=209  gui=NONE  guifg=#ce9887
+hi Special    cterm=NONE ctermfg=209  gui=NONE  guifg=#ff936a
+hi link Delimiter Operator
 hi Statement  cterm=NONE ctermfg=39	  gui=NONE  guifg=#10b1fe
 hi Type	      cterm=NONE ctermfg=204  gui=NONE  guifg=#ff6480
-hi String     cterm=NONE ctermfg=222  gui=NONE  guifg=#f9c859
 hi Operator   cterm=NONE ctermfg=105  gui=NONE  guifg=#7a82da
-hi Field      cterm=NONE ctermfg=138  gui=NONE  guifg=#ce9887
+" hi Field      cterm=NONE ctermfg=138  gui=NONE  guifg=#ce9887
+hi link Field Identifier 
 hi Parameter  cterm=NONE ctermfg=81   gui=NONE  guifg=#8bcdef
-hi Attribute  cterm=NONE ctermfg=209  gui=NONE  guifg=#ff936a
 hi Tag        cterm=NONE ctermfg=27   gui=NONE  guifg=#3691ff
 
 hi link Class Type
+hi link Attribute Special
 
 " javascript
 hi link javaScriptBraces Operator
@@ -86,6 +111,7 @@ hi link javaScriptFunction Statement
 hi link javaScriptBoolean Keyword
 
 " vim-javascript
+" syntax clear jsGlobalNodeObjects
 hi link jsGlobalObjects Normal
 hi link jsEnvComment Comment
 hi link jsStorageClass Keyword
@@ -105,7 +131,7 @@ hi link jsFuncArgs Parameter
 hi link jsFuncCall Function
 hi link jsObjectProp Field
 hi link jsObjectKey Field
-hi link jsSpecial Attribute
+" hi link jsSpecial Attribute
 hi link jsClassDefinition Class
 
 hi link jsRegexpGroup Field
@@ -130,6 +156,12 @@ hi link jsonBraces Operator
 hi link jsonQuote Operator
 hi link jsonKeyword Field
 hi link jsonKeywordMatch Operator
-hi link jsonNoise Operator
+hi link jsonNoise aaa
+
+" git-gutter
+hi link GitGutterAdd Function
+hi link GitGutterChange Keyword
+hi link GitGutterDelete Class
+hi link GitGutterChangeDelete Tag
 
 " vim: sw=2

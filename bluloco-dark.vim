@@ -23,6 +23,10 @@ let g:terminal_color_13 = '#FF78F8'
 let g:terminal_color_14 = '#5FB9BC'
 let g:terminal_color_15 = '#FFFFFF'
 
+" Indent guide colors
+let g:indentLine_color_term = 242
+let g:indentLine_color_gui = '#747d8d'
+
 " Normal should come first
 " hi Normal     ctermfg=249  ctermbg=236  guifg=#b9c0cb  guibg=#282c34
 hi Normal     ctermfg=249  ctermbg=NONE  guifg=#b9c0cb  guibg=NONE

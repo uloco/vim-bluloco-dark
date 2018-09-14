@@ -32,7 +32,8 @@ let g:terminal_color_15 = '#ffffff'
 let g:indentLine_color_term = 242
 let g:indentLine_color_gui = '#747d8d'
 
-hi Cursor                               guifg=#282c34  guibg=#ffcc00
+hi Cursor                               guifg=#282c34  guibg=#ff0000
+hi lCursor                              guifg=#282c34  guibg=#ffcc00
 "hi Cursor ctermfg=17 ctermbg=220 cterm=NONE guifg=#282c34 guibg=#ffcc00 gui=NONE
 hi Visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#3e4451 gui=NONE
 hi CursorLine ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#353942 gui=NONE
@@ -41,7 +42,8 @@ hi ColorColumn ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#353942 gui=N
 hi LineNr ctermfg=242 ctermbg=NONE cterm=NONE guifg=#747d8d guibg=NONE gui=NONE
 hi CursorLineNr ctermfg=Yellow ctermbg=NONE cterm=bold guifg=#ffcc00 guibg=NONE gui=bold     
 hi VertSplit ctermfg=59 ctermbg=59 cterm=NONE guifg=#4e535c guibg=#4e535c gui=NONE
-hi MatchParen ctermfg=39 ctermbg=NONE cterm=underline guifg=#10b1fe guibg=NONE gui=underline
+" hi MatchParen ctermfg=39 ctermbg=NONE cterm=underline guifg=#10b1fe guibg=NONE gui=underline
+hi MatchParen ctermfg=249  ctermbg=105 cterm=underline guibg=#7a82da guifg=#b9c0cb gui=underline
 hi StatusLine ctermfg=145 ctermbg=59 cterm=bold guifg=#abb2bf guibg=#4e535c gui=bold
 hi StatusLineNC ctermfg=145 ctermbg=59 cterm=NONE guifg=#abb2bf guibg=#4e535c gui=NONE
 hi Pmenu ctermfg=249 ctermbg=235 guibg=#22252a guifg=#b9c0cb
@@ -72,12 +74,13 @@ hi ErrorMsg ctermfg=197 ctermbg=59 cterm=NONE guifg=#fc2f52 guibg=#3e4451 gui=NO
 hi WarningMsg ctermfg=197 ctermbg=59 cterm=NONE guifg=#fc2f52 guibg=#3e4451 gui=NONE
 hi Float ctermfg=213 ctermbg=NONE cterm=NONE guifg=#ff78f8 guibg=NONE gui=NONE
 hi Function ctermfg=77 ctermbg=NONE cterm=NONE guifg=#3fc56b guibg=NONE gui=NONE
-hi Identifier ctermfg=39 ctermbg=NONE cterm=NONE guifg=#10b1fe guibg=NONE gui=NONE
+hi Identifier ctermfg=138 ctermbg=NONE cterm=NONE guifg=#ce9887 guibg=NONE gui=NONE
 hi Keyword ctermfg=39 ctermbg=NONE cterm=NONE guifg=#10b1fe guibg=NONE gui=NONE
 hi Label ctermfg=221 ctermbg=NONE cterm=NONE guifg=#f9c859 guibg=NONE gui=NONE
 hi NonText ctermfg=59 ctermbg=23 cterm=NONE guifg=#545862 guibg=#2f333b gui=NONE
 hi Number ctermfg=213 ctermbg=NONE cterm=NONE guifg=#ff78f8 guibg=NONE gui=NONE
 hi Operator ctermfg=104 ctermbg=NONE cterm=NONE guifg=#7a82da guibg=NONE gui=NONE
+hi Parameter  cterm=NONE ctermfg=81   gui=NONE  guifg=#8bcdef
 hi PreProc ctermfg=39 ctermbg=NONE cterm=NONE guifg=#10b1fe guibg=NONE gui=NONE
 hi Special ctermfg=145 ctermbg=NONE cterm=NONE guifg=#abb2bf guibg=NONE gui=NONE
 hi SpecialKey ctermfg=59 ctermbg=59 cterm=NONE guifg=#545862 guibg=#353942 gui=NONE

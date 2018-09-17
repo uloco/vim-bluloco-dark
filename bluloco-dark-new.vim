@@ -75,6 +75,7 @@ hi WarningMsg ctermfg=197 ctermbg=59 cterm=NONE guifg=#fc2f52 guibg=#3e4451 gui=
 hi Float ctermfg=213 ctermbg=NONE cterm=NONE guifg=#ff78f8 guibg=NONE gui=NONE
 hi Function ctermfg=77 ctermbg=NONE cterm=NONE guifg=#3fc56b guibg=NONE gui=NONE
 hi Identifier ctermfg=138 ctermbg=NONE cterm=NONE guifg=#ce9887 guibg=NONE gui=NONE
+hi link Field Identifier 
 hi Keyword ctermfg=39 ctermbg=NONE cterm=NONE guifg=#10b1fe guibg=NONE gui=NONE
 hi Label ctermfg=221 ctermbg=NONE cterm=NONE guifg=#f9c859 guibg=NONE gui=NONE
 hi NonText ctermfg=59 ctermbg=23 cterm=NONE guifg=#545862 guibg=#2f333b gui=NONE
@@ -82,7 +83,7 @@ hi Number ctermfg=213 ctermbg=NONE cterm=NONE guifg=#ff78f8 guibg=NONE gui=NONE
 hi Operator ctermfg=104 ctermbg=NONE cterm=NONE guifg=#7a82da guibg=NONE gui=NONE
 hi Parameter  cterm=NONE ctermfg=81   gui=NONE  guifg=#8bcdef
 hi PreProc ctermfg=39 ctermbg=NONE cterm=NONE guifg=#10b1fe guibg=NONE gui=NONE
-hi Special ctermfg=145 ctermbg=NONE cterm=NONE guifg=#abb2bf guibg=NONE gui=NONE
+hi Special ctermfg=209 ctermbg=NONE cterm=NONE guifg=#ff936a guibg=NONE gui=NONE
 hi SpecialKey ctermfg=59 ctermbg=59 cterm=NONE guifg=#545862 guibg=#353942 gui=NONE
 hi Statement ctermfg=39 ctermbg=NONE cterm=NONE guifg=#10b1fe guibg=NONE gui=NONE
 hi StorageClass ctermfg=39 ctermbg=NONE cterm=NONE guifg=#10b1fe guibg=NONE gui=NONE
@@ -92,6 +93,8 @@ hi Title ctermfg=145 ctermbg=NONE cterm=bold guifg=#abb2bf guibg=NONE gui=bold
 hi Todo ctermfg=60 ctermbg=NONE cterm=inverse,bold guifg=#636d83 guibg=NONE gui=inverse,bold
 hi Type ctermfg=204 ctermbg=NONE cterm=NONE guifg=#ff6480 guibg=NONE gui=NONE
 hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
+
+hi link Field Identifier 
 
 hi rubyClass ctermfg=39 ctermbg=NONE cterm=NONE guifg=#10b1fe guibg=NONE gui=NONE
 hi rubyFunction ctermfg=77 ctermbg=NONE cterm=NONE guifg=#3fc56b guibg=NONE gui=NONE
@@ -127,10 +130,23 @@ hi htmlTagName ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NO
 hi htmlArg ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi htmlSpecialChar ctermfg=141 ctermbg=NONE cterm=NONE guifg=#9f7efe guibg=NONE gui=NONE
 
-hi javaScriptFunction ctermfg=39 ctermbg=NONE cterm=NONE guifg=#10b1fe guibg=NONE gui=NONE
-hi javaScriptRailsFunction ctermfg=77 ctermbg=NONE cterm=NONE guifg=#3fc56b guibg=NONE gui=NONE
-hi javaScriptBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-"
+hi yamlKey ctermfg=174 ctermbg=NONE cterm=NONE guifg=#ce9887 guibg=NONE gui=NONE
+hi yamlAnchor ctermfg=145 ctermbg=NONE cterm=NONE guifg=#abb2bf guibg=NONE gui=NONE
+hi yamlAlias ctermfg=145 ctermbg=NONE cterm=NONE guifg=#abb2bf guibg=NONE gui=NONE
+hi yamlDocumentHeader ctermfg=221 ctermbg=NONE cterm=NONE guifg=#f9c859 guibg=NONE gui=NONE
+
+hi cssURL ctermfg=117 ctermbg=NONE cterm=NONE guifg=#8bcdef guibg=NONE gui=NONE
+hi cssFunctionName ctermfg=77 ctermbg=NONE cterm=NONE guifg=#3fc56b guibg=NONE gui=NONE
+hi cssColor ctermfg=221 ctermbg=NONE cterm=NONE guifg=#f9c859 guibg=NONE gui=NONE
+hi cssPseudoClassId ctermfg=209 ctermbg=NONE cterm=NONE guifg=#ff936a guibg=NONE gui=NONE
+hi cssClassName ctermfg=209 ctermbg=NONE cterm=NONE guifg=#ff936a guibg=NONE gui=NONE
+hi cssValueLength ctermfg=213 ctermbg=NONE cterm=NONE guifg=#ff78f8 guibg=NONE gui=NONE
+hi cssCommonAttr ctermfg=221 ctermbg=NONE cterm=NONE guifg=#f9c859 guibg=NONE gui=NONE
+hi cssBraces ctermfg=104 ctermbg=NONE cterm=NONE guifg=#7a82da guibg=NONE gui=NONE
+
+" vim
+hi link vimFunction Function
+
 " javascript
 hi link javaScriptBraces Operator
 hi link javaScriptParens Operator
@@ -153,6 +169,7 @@ hi link jsClassBraces Operator
 hi link jsFuncParens Operator
 hi link jsFuncBraces Operator
 hi link jsBrackets Operator
+hi link jsObjectSeparator Operator
 hi link jsParens Operator
 hi link jsNoise Operator
 hi link jsArrowFunction Keyword
@@ -160,22 +177,32 @@ hi link jsFuncArgs Parameter
 hi link jsFuncCall Function
 hi link jsObjectProp Field
 hi link jsObjectKey Field
-" hi link jsSpecial Attribute
+hi link jsSpecial Attribute
 hi link jsClassDefinition Class
 
 hi link jsRegexpGroup Field
 hi link jsRegexpQuantifier Operator
 hi link jsRegexpBoundary Keyword
-hi yamlKey ctermfg=174 ctermbg=NONE cterm=NONE guifg=#ce9887 guibg=NONE gui=NONE
-hi yamlAnchor ctermfg=145 ctermbg=NONE cterm=NONE guifg=#abb2bf guibg=NONE gui=NONE
-hi yamlAlias ctermfg=145 ctermbg=NONE cterm=NONE guifg=#abb2bf guibg=NONE gui=NONE
-hi yamlDocumentHeader ctermfg=221 ctermbg=NONE cterm=NONE guifg=#f9c859 guibg=NONE gui=NONE
 
-hi cssURL ctermfg=117 ctermbg=NONE cterm=NONE guifg=#8bcdef guibg=NONE gui=NONE
-hi cssFunctionName ctermfg=77 ctermbg=NONE cterm=NONE guifg=#3fc56b guibg=NONE gui=NONE
-hi cssColor ctermfg=221 ctermbg=NONE cterm=NONE guifg=#f9c859 guibg=NONE gui=NONE
-hi cssPseudoClassId ctermfg=209 ctermbg=NONE cterm=NONE guifg=#ff936a guibg=NONE gui=NONE
-hi cssClassName ctermfg=209 ctermbg=NONE cterm=NONE guifg=#ff936a guibg=NONE gui=NONE
-hi cssValueLength ctermfg=213 ctermbg=NONE cterm=NONE guifg=#ff78f8 guibg=NONE gui=NONE
-hi cssCommonAttr ctermfg=221 ctermbg=NONE cterm=NONE guifg=#f9c859 guibg=NONE gui=NONE
-hi cssBraces ctermfg=104 ctermbg=NONE cterm=NONE guifg=#7a82da guibg=NONE gui=NONE
+" typescript
+hi link typescriptBraces Operator
+hi link typescriptParens Operator
+hi link typescriptNumber Number
+hi link typescriptIdentifier Statement
+hi link typescriptFunction Statement
+hi link typescriptBoolean Keyword
+
+" json
+hi link jsonBraces Operator
+hi link jsonQuote Operator
+hi link jsonKeyword Field
+hi link jsonKeywordMatch Operator
+hi link jsonNoise aaa
+
+" git-gutter
+hi link GitGutterAdd Function
+hi link GitGutterChange Keyword
+hi link GitGutterDelete Class
+hi link GitGutterChangeDelete Tag
+
+" vim: sw=2

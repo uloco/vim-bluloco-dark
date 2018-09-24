@@ -75,7 +75,6 @@ hi WarningMsg ctermfg=197 ctermbg=59 cterm=NONE guifg=#fc2f52 guibg=#3e4451 gui=
 hi Float ctermfg=213 ctermbg=NONE cterm=NONE guifg=#ff78f8 guibg=NONE gui=NONE
 hi Function ctermfg=77 ctermbg=NONE cterm=NONE guifg=#3fc56b guibg=NONE gui=NONE
 hi Identifier ctermfg=138 ctermbg=NONE cterm=NONE guifg=#ce9887 guibg=NONE gui=NONE
-hi link Field Identifier 
 hi Keyword ctermfg=39 ctermbg=NONE cterm=NONE guifg=#10b1fe guibg=NONE gui=NONE
 hi Label ctermfg=221 ctermbg=NONE cterm=NONE guifg=#f9c859 guibg=NONE gui=NONE
 hi NonText ctermfg=59 ctermbg=23 cterm=NONE guifg=#545862 guibg=#2f333b gui=NONE
@@ -94,7 +93,10 @@ hi Todo ctermfg=60 ctermbg=NONE cterm=inverse,bold guifg=#636d83 guibg=NONE gui=
 hi Type ctermfg=204 ctermbg=NONE cterm=NONE guifg=#ff6480 guibg=NONE gui=NONE
 hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
 
+hi link Class Type
+hi link Attribute Special
 hi link Field Identifier 
+hi link Punctuation Operator
 
 hi rubyClass ctermfg=39 ctermbg=NONE cterm=NONE guifg=#10b1fe guibg=NONE gui=NONE
 hi rubyFunction ctermfg=77 ctermbg=NONE cterm=NONE guifg=#3fc56b guibg=NONE gui=NONE
@@ -144,12 +146,39 @@ hi cssValueLength ctermfg=213 ctermbg=NONE cterm=NONE guifg=#ff78f8 guibg=NONE g
 hi cssCommonAttr ctermfg=221 ctermbg=NONE cterm=NONE guifg=#f9c859 guibg=NONE gui=NONE
 hi cssBraces ctermfg=104 ctermbg=NONE cterm=NONE guifg=#7a82da guibg=NONE gui=NONE
 
+" css
+hi link cssAttributeSelector Attribute
+hi link cssFontDescriptor Keyword
+hi link cssImportant Keyword
+hi link cssTagName Tag
+hi link cssProp Field
+hi link cssUnitDecorators Operator
+hi link cssSelectorOp Operator
+hi link cssSelectorOp2 Operator
+hi link cssAttrComma Punctuation
+hi link cssNoise Punctuation
+hi link cssFunctionComma Punctuation
+hi link cssAttrRegion Operator
+hi link cssIdentifier Class
+hi link cssAttr Normal
+hi link cssFontDescriptorFunction Normal
+
+" scss
+hi link sassClass Attribute
+
+" html
+hi link htmlTag Tag
+hi link htmlEndTag Tag
+hi link htmlTagName Tag
+hi link htmlArg Attribute
+
 " vim
 hi link vimFunction Function
+hi link vimParenSep Punctuation
 
 " javascript
-hi link javaScriptBraces Operator
-hi link javaScriptParens Operator
+hi link javaScriptBraces Punctuation
+hi link javaScriptParens Punctuation
 hi link javaScriptNumber Number
 hi link javaScriptIdentifier Statement
 hi link javaScriptFunction Statement
@@ -164,14 +193,14 @@ hi link jsFunction Keyword
 hi link jsThis Keyword
 hi link jsBooleanTrue Keyword
 hi link jsBooleanFalse Keyword
-hi link jsObjectBraces Operator
-hi link jsClassBraces Operator
-hi link jsFuncParens Operator
-hi link jsFuncBraces Operator
-hi link jsBrackets Operator
-hi link jsObjectSeparator Operator
-hi link jsParens Operator
-hi link jsNoise Operator
+hi link jsObjectBraces Punctuation
+hi link jsClassBraces Punctuation
+hi link jsFuncParens Punctuation
+hi link jsFuncBraces Punctuation
+hi link jsBrackets Punctuation
+hi link jsObjectSeparator Punctuation
+hi link jsParens Punctuation
+hi link jsNoise Punctuation
 hi link jsArrowFunction Keyword
 hi link jsFuncArgs Parameter
 hi link jsFuncCall Function
@@ -184,20 +213,60 @@ hi link jsRegexpGroup Field
 hi link jsRegexpQuantifier Operator
 hi link jsRegexpBoundary Keyword
 
-" typescript
-hi link typescriptBraces Operator
-hi link typescriptParens Operator
+" yats
+hi link typescriptIdentifierName Normal
+hi link typescriptFuncCallArg Normal
+hi link typescriptOperator Operator
+hi link typescriptBraces Punctuation
+hi link typescriptTypeBrackets Punctuation
+hi link typescriptParens Punctuation
+hi link typescriptTypeAnnotation Punctuation
+hi link typescriptDotNotation Punctuation
 hi link typescriptNumber Number
 hi link typescriptIdentifier Statement
 hi link typescriptFunction Statement
 hi link typescriptBoolean Keyword
+hi link typescriptImport Keyword
+hi link typescriptExport Keyword
+hi link typescriptEnumKeyword Keyword
+hi link typescriptVariable Keyword
+hi link typescriptPredefinedType Keyword
+hi link typescriptArrowFuncParamter Keyword
+hi link typescriptArrowFunc Keyword
+hi link typescriptGlobal Class
+hi link typescriptClassName Class
+hi link typescriptTypeParameter Type
+hi link typescriptDecorator Function
+hi link typescriptHeadersMethod Function
+hi link typescriptBOMLocationMethod Function
+hi link typescriptArrayMethod Function
+hi link typescriptStringMethod Function
+hi link typescriptPromiseMethod Function
+hi link typescriptCacheMethod Function
+hi link typescriptCall Parameter
+hi link typescriptArrowFuncArg Parameter
+hi link typescriptMember Field
+hi link typescriptObjectLabel Field
+hi link typescriptProp Field
+
+" leafgarland/typescript-vim
+" hi link typescriptBraces Punctuation
+" hi link typescriptInterpolationDelimiter Punctuation
+" hi link typescriptLogicSymbols Operator
+" hi link typescriptDocTags Comment 
+" hi link typescriptDocParam Comment 
+" hi link typescriptDecorators Function
+" hi link typescriptFuncKeyword Keyword
 
 " json
-hi link jsonBraces Operator
-hi link jsonQuote Operator
+hi link jsonBraces Punctuation
+hi link jsonQuote Punctuation
 hi link jsonKeyword Field
-hi link jsonKeywordMatch Operator
-hi link jsonNoise aaa
+hi link jsonKeywordMatch Punctuation
+hi link jsonNull Keyword
+
+" shell
+hi link shFunctionKey Keyword
 
 " git-gutter
 hi link GitGutterAdd Function

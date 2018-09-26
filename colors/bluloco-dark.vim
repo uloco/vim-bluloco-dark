@@ -8,7 +8,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = "bluloco-dark-new"
+let g:colors_name = "bluloco-dark"
 
 " Terminal colors
 let g:terminal_color_0  = '#5c6370'
@@ -71,6 +71,7 @@ hi DiffDelete ctermfg=88 ctermbg=NONE cterm=NONE guifg=#8b090a guibg=NONE gui=NO
 hi DiffChange ctermfg=145 ctermbg=23 cterm=NONE guifg=#abb2bf guibg=#243b5e gui=NONE
 hi DiffText ctermfg=145 ctermbg=24 cterm=bold guifg=#abb2bf guibg=#204a87 gui=bold
 hi ErrorMsg ctermfg=197 ctermbg=59 cterm=NONE guifg=#fc2f52 guibg=#3e4451 gui=NONE
+hi Error ctermfg=197 ctermbg=59 cterm=NONE guifg=#fc2f52 guibg=#3e4451 gui=NONE
 hi WarningMsg ctermfg=197 ctermbg=59 cterm=NONE guifg=#fc2f52 guibg=#3e4451 gui=NONE
 hi Float ctermfg=213 ctermbg=NONE cterm=NONE guifg=#ff78f8 guibg=NONE gui=NONE
 hi Function ctermfg=77 ctermbg=NONE cterm=NONE guifg=#3fc56b guibg=NONE gui=NONE
@@ -152,7 +153,6 @@ hi link cssFontDescriptor Keyword
 hi link cssImportant Keyword
 hi link cssTagName Tag
 hi link cssProp Field
-hi link cssUnitDecorators Operator
 hi link cssSelectorOp Operator
 hi link cssSelectorOp2 Operator
 hi link cssAttrComma Punctuation
@@ -160,14 +160,21 @@ hi link cssNoise Punctuation
 hi link cssFunctionComma Punctuation
 hi link cssAttrRegion Operator
 hi link cssIdentifier Class
-hi link cssAttr Normal
-hi link cssFontDescriptorFunction Normal
+hi link cssAttr String
+hi link cssFontDescriptorFunction String
+hi link cssUnitDecorators String
 
 " scss
 hi link sassClass Attribute
-
+hi link sassCssAttribute String
+hi link sassProperty Field
+hi link sassVariable Normal
+hi link sassMixinName Function
+hi link sassCssAttribute Punctuation
+hi link sassDefinition Punctuation
 " html
 hi link htmlTag Tag
+hi link htmlSpecialTagName Tag
 hi link htmlEndTag Tag
 hi link htmlTagName Tag
 hi link htmlArg Attribute
@@ -185,16 +192,17 @@ hi link javaScriptFunction Statement
 hi link javaScriptBoolean Keyword
 
 " vim-javascript
-" syntax clear jsGlobalNodeObjects
-hi link jsGlobalObjects Normal
+hi link jsGlobalObjects Constant
 hi link jsEnvComment Comment
 hi link jsStorageClass Keyword
 hi link jsFunction Keyword
 hi link jsThis Keyword
 hi link jsBooleanTrue Keyword
 hi link jsBooleanFalse Keyword
+hi link jsDot Punctuation
 hi link jsObjectBraces Punctuation
 hi link jsClassBraces Punctuation
+hi link jsDestructuringBraces Punctuation
 hi link jsFuncParens Punctuation
 hi link jsFuncBraces Punctuation
 hi link jsBrackets Punctuation
@@ -274,4 +282,13 @@ hi link GitGutterChange Keyword
 hi link GitGutterDelete Class
 hi link GitGutterChangeDelete Tag
 
+" pug
+hi link pugClass Attribute
+hi link pugAttributes Attribute
+hi link pugId Class
+hi link pugIdChar Class
+hi link pugAttributesDelimiter Punctuation
+hi link pugBlockExpansionChar Punctuation
+hi link pugInterpolationDelimiter Punctuation
+hi link jsNull Keyword
 " vim: sw=2

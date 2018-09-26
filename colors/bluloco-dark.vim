@@ -203,6 +203,8 @@ hi link jsDot Punctuation
 hi link jsObjectBraces Punctuation
 hi link jsClassBraces Punctuation
 hi link jsDestructuringBraces Punctuation
+hi link jsTemplateBraces Punctuation
+hi link jsIfElseBraces Punctuation
 hi link jsFuncParens Punctuation
 hi link jsFuncBraces Punctuation
 hi link jsBrackets Punctuation

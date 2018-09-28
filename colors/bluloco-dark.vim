@@ -52,7 +52,8 @@ hi PmenuSbar ctermbg=235 guibg=#22252a
 hi PmenuThumb ctermbg=242 guibg=#747d8d
 hi IncSearch ctermfg=17 ctermbg=221 cterm=NONE guifg=#282c34 guibg=#f9c859 gui=NONE
 hi Search ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
-hi Directory ctermfg=221 ctermbg=NONE cterm=NONE guifg=#f9c859 guibg=NONE gui=NONE
+" hi Directory ctermfg=221 ctermbg=NONE cterm=NONE guifg=#f9c859 guibg=NONE gui=NONE
+hi Directory ctermfg=39 ctermbg=NONE cterm=NONE guifg=#10b1fe guibg=NONE gui=NONE
 hi Folded ctermfg=60 ctermbg=17 cterm=NONE guifg=#636d83 guibg=#282c34 gui=NONE
 hi TabLine ctermfg=242 ctermbg=235 guifg=#747d8d guibg=#25272d
 hi TabLineSel ctermbg=236 cterm=bold gui=bold guibg=#282c34
@@ -293,4 +294,10 @@ hi link pugAttributesDelimiter Punctuation
 hi link pugBlockExpansionChar Punctuation
 hi link pugInterpolationDelimiter Punctuation
 hi link jsNull Keyword
+
+" NERDTree
+hi link NERDTreeHelp Comment
+hi link NERDTreeCWD String
+hi link NERDTreeDirSlash Punctuation
+
 " vim: sw=2

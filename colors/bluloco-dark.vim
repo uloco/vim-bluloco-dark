@@ -55,6 +55,7 @@ hi Search ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=un
 " hi Directory ctermfg=221 ctermbg=NONE cterm=NONE guifg=#f9c859 guibg=NONE gui=NONE
 hi Directory ctermfg=39 ctermbg=NONE cterm=NONE guifg=#10b1fe guibg=NONE gui=NONE
 hi Folded ctermfg=60 ctermbg=17 cterm=NONE guifg=#636d83 guibg=#282c34 gui=NONE
+hi Question ctermfg=31 guifg=#5fb9bc
 hi TabLine ctermfg=242 ctermbg=235 guifg=#747d8d guibg=#25272d
 hi TabLineSel ctermbg=236 cterm=bold gui=bold guibg=#282c34
 hi TabLineFill ctermfg=235 guifg=#22252a
@@ -79,7 +80,7 @@ hi Function ctermfg=77 ctermbg=NONE cterm=NONE guifg=#3fc56b guibg=NONE gui=NONE
 hi Identifier ctermfg=138 ctermbg=NONE cterm=NONE guifg=#ce9887 guibg=NONE gui=NONE
 hi Keyword ctermfg=39 ctermbg=NONE cterm=NONE guifg=#10b1fe guibg=NONE gui=NONE
 hi Label ctermfg=221 ctermbg=NONE cterm=NONE guifg=#f9c859 guibg=NONE gui=NONE
-hi NonText ctermfg=59 ctermbg=23 cterm=NONE guifg=#545862 guibg=#2f333b gui=NONE
+hi NonText ctermfg=59 ctermbg=17 cterm=NONE guifg=#545862 guibg=#282c34 gui=NONE
 hi Number ctermfg=213 ctermbg=NONE cterm=NONE guifg=#ff78f8 guibg=NONE gui=NONE
 hi Operator ctermfg=104 ctermbg=NONE cterm=NONE guifg=#7a82da guibg=NONE gui=NONE
 hi Parameter  cterm=NONE ctermfg=81   gui=NONE  guifg=#8bcdef
@@ -296,8 +297,12 @@ hi link pugInterpolationDelimiter Punctuation
 hi link jsNull Keyword
 
 " NERDTree
-hi link NERDTreeHelp Comment
+hi link NERDTreeHelp Normal
 hi link NERDTreeCWD String
 hi link NERDTreeDirSlash Punctuation
+
+"netrw
+hi link netrwClassify Punctuation
+hi link netrwLink Punctuation
 
 " vim: sw=2

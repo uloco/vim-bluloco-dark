@@ -230,6 +230,7 @@ hi link typescriptIdentifierName Normal
 hi link typescriptFuncCallArg Normal
 hi link typescriptOperator Operator
 hi link typescriptBraces Punctuation
+hi link typescriptObjectColon Punctuation
 hi link typescriptTypeBrackets Punctuation
 hi link typescriptParens Punctuation
 hi link typescriptTypeAnnotation Punctuation
@@ -245,6 +246,7 @@ hi link typescriptVariable Keyword
 hi link typescriptPredefinedType Keyword
 hi link typescriptArrowFuncParamter Keyword
 hi link typescriptArrowFunc Keyword
+hi link typescriptMethodAccessor Keyword
 hi link typescriptGlobal Class
 hi link typescriptClassName Class
 hi link typescriptTypeParameter Type
@@ -261,14 +263,16 @@ hi link typescriptMember Field
 hi link typescriptObjectLabel Field
 hi link typescriptProp Field
 
+
 " leafgarland/typescript-vim
-" hi link typescriptBraces Punctuation
-" hi link typescriptInterpolationDelimiter Punctuation
-" hi link typescriptLogicSymbols Operator
-" hi link typescriptDocTags Comment 
-" hi link typescriptDocParam Comment 
-" hi link typescriptDecorators Function
-" hi link typescriptFuncKeyword Keyword
+hi link typescriptBraces Punctuation
+hi link typescriptInterpolationDelimiter Punctuation
+hi link typescriptLogicSymbols Operator
+hi link typescriptDocTags Comment 
+hi link typescriptDocParam Comment 
+hi link typescriptDecorators Function
+hi link typescriptFuncKeyword Keyword
+hi link typescriptReserved Keyword
 
 " json
 hi link jsonBraces Punctuation

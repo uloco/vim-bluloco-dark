@@ -309,4 +309,14 @@ hi link NERDTreeDirSlash Punctuation
 hi link netrwClassify Punctuation
 hi link netrwLink Punctuation
 
+" markdown
+hi link mkdHeading Keyword
+hi link mkdDelimiter Punctuation
+hi link mkdCodeDelimiter Punctuation
+hi link mkdListItem Punctuation
+hi link mkdLink Tag
+hi link mkdInlineURL Tag
+hi link mkdCode Field
+hi link mkdBold Class
+hi link mkdItalic Attribute
 " vim: sw=2

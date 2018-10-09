@@ -68,10 +68,10 @@ hi Comment ctermfg=60 ctermbg=NONE cterm=NONE guifg=#636d83 guibg=NONE gui=NONE
 hi Conditional ctermfg=39 ctermbg=NONE cterm=NONE guifg=#10b1fe guibg=NONE gui=NONE
 hi Constant ctermfg=141 ctermbg=NONE cterm=NONE guifg=#9f7efe guibg=NONE gui=NONE
 hi Define ctermfg=39 ctermbg=NONE cterm=NONE guifg=#10b1fe guibg=NONE gui=NONE
-hi DiffAdd ctermfg=145 ctermbg=64 cterm=bold guifg=#abb2bf guibg=#46840f gui=bold
-hi DiffDelete ctermfg=88 ctermbg=NONE cterm=NONE guifg=#8b090a guibg=NONE gui=NONE
-hi DiffChange ctermfg=145 ctermbg=23 cterm=NONE guifg=#abb2bf guibg=#243b5e gui=NONE
-hi DiffText ctermfg=145 ctermbg=24 cterm=bold guifg=#abb2bf guibg=#204a87 gui=bold
+hi DiffAdd    ctermbg=22        guibg=#27543a
+hi DiffChange ctermbg=24        guibg=#004766
+hi DiffText   ctermbg=24        guibg=#00608a
+hi DiffDelete ctermfg=131       guifg=#803434 ctermbg=NONE guibg=NONE
 hi ErrorMsg ctermfg=197 ctermbg=59 cterm=NONE guifg=#fc2f52 guibg=#3e4451 gui=NONE
 hi Error ctermfg=197 ctermbg=59 cterm=NONE guifg=#fc2f52 guibg=#3e4451 gui=NONE
 hi WarningMsg ctermfg=197 ctermbg=59 cterm=NONE guifg=#fc2f52 guibg=#3e4451 gui=NONE

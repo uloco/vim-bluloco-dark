@@ -229,6 +229,7 @@ hi link jsRegexpBoundary Keyword
 hi link typescriptIdentifierName Normal
 hi link typescriptFuncCallArg Normal
 hi link typescriptOperator Operator
+hi link typescriptTemplateSB Punctuation
 hi link typescriptBraces Punctuation
 hi link typescriptObjectColon Punctuation
 hi link typescriptTypeBrackets Punctuation
@@ -247,9 +248,11 @@ hi link typescriptPredefinedType Keyword
 hi link typescriptArrowFuncParamter Keyword
 hi link typescriptArrowFunc Keyword
 hi link typescriptMethodAccessor Keyword
+hi link typescriptCastKeyword Keyword
 hi link typescriptGlobal Class
 hi link typescriptClassName Class
 hi link typescriptTypeParameter Type
+hi link typescriptAliasDeclaration Type
 hi link typescriptDecorator Function
 hi link typescriptHeadersMethod Function
 hi link typescriptBOMLocationMethod Function

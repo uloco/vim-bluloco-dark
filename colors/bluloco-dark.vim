@@ -72,6 +72,8 @@ hi DiffAdd    ctermbg=22        guibg=#27543a
 hi DiffChange ctermbg=24        guibg=#004766
 hi DiffText   ctermbg=24        guibg=#00608a
 hi DiffDelete ctermfg=131       guifg=#803434 ctermbg=NONE guibg=NONE
+hi diffAdded     ctermbg=22        guibg=#2b663f
+hi diffRemoved ctermbg=131       guibg=#803434 ctermfg=NONE guifg=NONE
 hi ErrorMsg ctermfg=197 ctermbg=59 cterm=NONE guifg=#fc2f52 guibg=#3e4451 gui=NONE
 hi Error ctermfg=197 ctermbg=59 cterm=NONE guifg=#fc2f52 guibg=#3e4451 gui=NONE
 hi WarningMsg ctermfg=197 ctermbg=59 cterm=NONE guifg=#fc2f52 guibg=#3e4451 gui=NONE
